@@ -57,7 +57,10 @@ textarea {
    ========================================================================== */
 
 body {
-    background-image: url(../images/bg-image.jpg);
+    background: url(../images/bg-image.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -103,11 +106,10 @@ header {
             display: inline;
         }
 
-.container {
-    width: 1200px;
-    height: auto;
-    margin-left: 150px;
-    padding-top: 120px;
+.drums {/*
+    height: auto;*/
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sidebar {
@@ -120,16 +122,34 @@ header {
     left: 0;
 }
 
+.buttons1  {
+    height: auto;
+    float:left;
+    overflow: hidden;
+}
+
 .main {
-    width: 1200px;
+    width: 960px;
     min-height: 100%;
     margin: 0 auto;
+    float: right;
 }
 
 .msg-img {
     margin: 0 auto;
     top:0;
 }
+
+/*.instructions {
+    overflow: hidden;
+    background: url(../images/bg-instructions.png) no-repeat center center fixed;
+    background-size: cover;
+}*/
+
+/*.container .main-drumset {
+    margin-right: auto;
+    margin-left: auto;
+}*/
 
 /*
 .container {
