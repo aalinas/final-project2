@@ -12,82 +12,70 @@
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-
-  
-
     <body>
 
-        <header class="bar-top">
-           <img src="images/header-image.png"> 
-        </header>
+      <!--   <img src="img/header.png"> -->
 
-    <div class="container">
+        <a href="#"><button class="start">Start Game </button></a>
 
+        <a href="#"><button class="restart">Restart Game</button></a>
 
-
-        <div class="sidebar">
-            <div class="buttons1">
-
-
-                <div class=""
-                <input type="image" img src="images/button-main.png" /> 
-                <input id="instructions-button" type="image" img src="images/button-instructions.png" /> 
-                <input class=
-                "about-button" type="image" img src="images/button-about.png" /> 
-                <input id="score-button" type="image" img src="images/button-score.png" /> 
-                <input class="new-game-button" type="image" img src="images/button-new-game.png" /> 
-                <input type="image" img src="images/button-mute.png" /> 
-            </div>
-        </div>    
-
-
-        <div class="main">
-            <div  class="container">
-
-                 <div class="msg">
-                    <img class="msg-img" src="images/msg-ready.png">
-                </div>
-
-                <div class="drums">
-                    <img class="main-drumset" src="images/main-drumset.png" alt="main drumset">
-                </div>
-
-              <article>
-                    <div id="instructions">
-                        <header>How to Play Drum Off </header>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
-                    </div>
-                </article> 
-
-                <article>
-                    <div id="about">
-                        <header>About Drum Off</header>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
-                    </div>
-                </article>  
-
-            </div>
+        <div id="score"> <h2>Score</h2>
+            <div class="scorebox"></div>
+            <div class="scorebox"></div>
+            <div class="scorebox"></div>
+            <div class="scorebox"></div>
+            <div class="scorebox"></div>
         </div>
 
-    </div>
-    </body>
 
+        <div id="gamescreen">
+            <!-- notes  -->
+            <div class="box" id="box1"></div>
+            <div class="box" id="box2"></div>
+            <div class="box" id="box3"></div>
+            <div class="box" id="box4"></div>
 
-    <section>
-        <nav class="nav">
-            <div class="menu-center">
-                <ul class="menu">
-                    <li><a href="#" title="main">1</a></li>
-                    <li><a  href="second.html" title="second">2</a></li>
-                    <li><a href="third.html" title="3">3</a></li>
-                </ul> 
+    
+            <!-- notes  -->
+
+                        <!-- drumset audio  -->
+            <div id="drumset"> 
+                <div class="drums" id="drum1">
+                    <audio id="drumaudio1">
+                        <source src="audio/audio1.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <div class="drums" id="drum2">
+                    <audio id="drumaudio2">
+                        <source src="audio/audio2.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <div class="drums" id="drum3">
+                    <audio id="drumaudio3">
+                        <source src="audio/audio3.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+
+                <div class="drums" id="drum4">
+                    <audio id="drumaudio4">
+                        <source src="audio/audio4.mp3" type="audio/mp3">
+                    </audio>
+                </div>
             </div>
-        </nav> 
-    </section>
+
+            <!-- drumset audio  -->
 
 
+        </div>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <audio id="bg">
+            <source src="audio/bg.mp3" type="audio/mp3">
+        </audio>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/main.js"></script>

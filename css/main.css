@@ -55,134 +55,121 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 body {
-    background: url(../images/bg-image.jpg) no-repeat center center fixed;
+    background: url(../img/bg.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    overflow: hidden;
 }
 
-header {
-    padding-bottom:50px;
+
+img {
+   display: block;
+   width:100%;
+   top:20px;
+     margin-left: auto;
+  margin-right: auto;
 }
 
-.bar-top {
+a button {
+    margin-top: 20px;
+    background-color: white;
+    font-size: 20px;
+    border: 3px solid #900;
+    text-decoration: none;
+}
+
+}
+a button.start {
+
+}
+
+a button.restart {
+
+
+}
+
+#gamescreen {
+    width:500px;
+    height:768px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box {
+    background-color: red;
+    position:absolute;
+    background: url(../img/note.png);
+    width:52px;
+    height:52px;
+    z-index: 1;
+}
+
+#box1 {
+    top:160px;
+    left:400px;
+}
+
+#box2 {
+    top:0px;
+    left:530px;
+}
+
+#box3 {
+    top:230px;
+    left:660px;
+}
+
+#box4 {
+    top:100px;
+    left:790px;
+}
+
+#drumset {
+    width:500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+#drum1 {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    width: 100%;
-    height: 25px;
-    background-color: #000000; 
-    opacity: 0.6; 
-    filter: alpha(opacity=50);
+    top:520px;
+    left:350px;
+    background: url(../img/drum1.png);
+    width:135px;
+    height: 137px;
+
 }
 
-.bar-top img {
-      position: absolute;
-      margin: auto;
-      top: 0;
-      right: 0;
-      bottom: 40;
-      left: 0;
+#drum2 {
+    position: fixed;
+    top:540px;
+    left:510px;
+    background: url(../img/drum2.png);
+    width:93px;
+    height: 109px;
 }
 
-
-    .nav {
-        overflow: hidden;
-    }
-     
-        .menu-center {
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            display: inline;
-        }
-
-.drums {/*
-    height: auto;*/
-    margin-left: auto;
-    margin-right: auto;
+#drum3 {
+    position: fixed;
+    top:540px;
+    left:650px;
+    background: url(../img/drum2.png);
+    width:93px;
+    height: 109px; 
 }
 
-.sidebar {
-    z-index: 50;
-    width: 200px;
-    height: 100%;
-    position: absolute;
-    bottom: 20px;
-    top: 0;
-    left: 0;
+#drum4 {
+    position: fixed;
+    top:520px;
+    left:750px;
+    background: url(../img/drum1.png);
+    width:135px;
+    height: 137px;
+    
 }
-
-.buttons1  {
-    height: auto;
-    float:left;
-    overflow: hidden;
-}
-
-.main {
-    width: 960px;
-    min-height: 100%;
-    margin: 0 auto;
-    float: right;
-}
-
-.msg-img {
-    margin: 0 auto;
-    top:0;
-}
-
-/*.instructions {
-    overflow: hidden;
-    background: url(../images/bg-instructions.png) no-repeat center center fixed;
-    background-size: cover;
-}*/
-
-/*.container .main-drumset {
-    margin-right: auto;
-    margin-left: auto;
-}*/
-
-/*
-.container {
-     position: absolute;
-      margin: auto;
-      top: 100px;
-      right: 260px;
-      bottom:100px;
-      left: 230px;
-}
-
-.main-drumset .cue-drumset{
-     position: absolute;
-      margin: auto;
-      top: 0;
-      right: 0;
-      bottom:0;
-      left: 0;
-}
-
-
-.buttons1  {
-    width: 20%;
-    height: auto;
-    padding-top: 120px;
-    float:left;
-}*/
-
-
-footer li {
-    font-size: 24px;
-}
-
 
 
 
