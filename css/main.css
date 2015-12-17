@@ -64,12 +64,11 @@ body {
     overflow: hidden;
 }
 
-
 img {
    display: block;
    width:100%;
    top:20px;
-     margin-left: auto;
+    margin-left: auto;
   margin-right: auto;
 }
 
@@ -81,22 +80,17 @@ a button {
     text-decoration: none;
 }
 
-}
-a button.start {
-
-}
-
-a button.restart {
-
-
-}
 
 #gamescreen {
-    width:500px;
-    height:768px;
-    margin-right: auto;
-    margin-left: auto;
+    background: url(../img/gamescreen-bg.png);
+    width:501px;
+    height: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
 }
+
+/*notes*/ 
 .box {
     background-color: red;
     position:absolute;
@@ -108,35 +102,39 @@ a button.restart {
 
 #box1 {
     top:160px;
-    left:400px;
+    left:40px;
 }
 
 #box2 {
     top:0px;
-    left:530px;
+    left:170px;
 }
 
 #box3 {
     top:230px;
-    left:660px;
+    left:260px;
 }
 
 #box4 {
     top:100px;
-    left:790px;
+    left:400px;
 }
 
+
+/*notes*/ 
+/*drums*/ 
 #drumset {
     width:500px;
+    position: absolute;
     margin-right: auto;
     margin-left: auto;
 }
 
 
 #drum1 {
-    position: fixed;
+    position: absolute;
     top:520px;
-    left:350px;
+    left:10px;
     background: url(../img/drum1.png);
     width:135px;
     height: 137px;
@@ -144,32 +142,34 @@ a button.restart {
 }
 
 #drum2 {
-    position: fixed;
-    top:540px;
-    left:510px;
+    position: absolute;
+    top:590px;
+    left:150px;
     background: url(../img/drum2.png);
     width:93px;
     height: 109px;
 }
 
 #drum3 {
-    position: fixed;
-    top:540px;
-    left:650px;
+    position: absolute;
+    top:590px;
+    left:250px;
     background: url(../img/drum2.png);
     width:93px;
     height: 109px; 
 }
 
 #drum4 {
-    position: fixed;
+    position: absolute;
     top:520px;
-    left:750px;
+    left:360px;
     background: url(../img/drum1.png);
     width:135px;
     height: 137px;
     
 }
+/*drums*/
+
 
 
 
