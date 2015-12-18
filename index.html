@@ -15,21 +15,24 @@
     <body>
 
       <!--   <img src="img/header.png"> -->
-
+<!-- 
         <a href="#"><button class="start">Start Game </button></a>
 
         <a href="#"><button class="restart">Restart Game</button></a>
+ -->
+<!--         <div class="score"> Score = 0</div>
+        <div class="finalScore">Final Score = 0</div> -->
 
-        <div id="score"> <h2>Score</h2>
-            <div class="scorebox"></div>
-            <div class="scorebox"></div>
-            <div class="scorebox"></div>
-            <div class="scorebox"></div>
-            <div class="scorebox"></div>
+
+        <div class="homescreen">
+            <audio id="homebg">
+                <source src="audio/homebg.mp3" type="audio/mp3">
+            </audio>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet convallis lectus. Quisque mauris massa, vulputate nec mi non, dignissim hendrerit enim. Nam mauris lorem, accumsan eu pharetra eu, sodales vitae nisl. Vestibulum ac hendrerit sapien. </p>
+            <a class="start" href="#"><span>START</span></a>
         </div>
 
-
-        <div id="gamescreen">
+        <div id="gamescreen" style="display:none">
             <!-- notes  -->
             <div class="box" id="box1"></div>
             <div class="box" id="box2"></div>
@@ -67,8 +70,16 @@
             </div>
 
             <!-- drumset audio  -->
+            <div class="gamescreen-board">
+                    <!-- score -->
+                    <div class="score"> Score = 0</div>
+                    <div class="finalScore">Final Score = 0</div>
 
-
+                    <!-- score  -->
+                    <div class="restart-button">
+                        <a class="restart" href="#"><span>RESTART</span></a>
+                    </div>
+            </div>
         </div>
 
         <audio id="bg">

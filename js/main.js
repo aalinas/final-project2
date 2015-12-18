@@ -1,7 +1,14 @@
-    
-$('button.start').on("click", function() {
-    bg.load();
-    bg.play();  
+$(document).ready(function() {
+    homebg.load();
+    homebg.play(); 
+});
+ 
+
+
+$('a.start').on("click", function() {
+
+    $('.homescreen').hide();
+    $('#gamescreen').show();  
 
     function animateNotes(item$) { // animates notes
     var w = Math.min($(window).width(), $("#gamescreen").width());
@@ -21,7 +28,7 @@ $('button.start').on("click", function() {
 });
 
 
-$('button.restart').on("click", function() {
+$('a.restart').on("click", function() {
     location.reload(true);  //reload page 
 });
 
@@ -31,28 +38,52 @@ $('button.restart').on("click", function() {
 $('body').on('keydown', function (e) {
 
     if (e.keyCode == 65) {  // a   
-         $('#drum1').css('background-image',"url(img/drum1hit.png)"); 
+         $('#drum1').css('background-image',"url(img/drumset1-click.png"); 
          drumaudio1.load();
          drumaudio1.play();
+
+        total = total + 1;
+        $(".total").html("Total Score = " + total);
+        score = score + 1;
+        $(".score").html("Score = " + score);
+
          
     }
 
     if (e.keyCode  == 83) {  // s
-         $("#drum2").css('background-image',"url(img/drum2hit.png)"); 
+         $("#drum2").css('background-image',"url(img/drumset2-click.png)"); 
          drumaudio2.load();
          drumaudio2.play();
+
+        total = total + 1;
+        $(".total").html("Total Score = " + total);
+        score = score + 1;
+        $(".score").html("Score = " + score);
+
      }
 
      if (e.keyCode  == 75) {  // k
-         $("#drum3").css('background-image',"url(img/drum2hit.png)"); 
+         $("#drum3").css('background-image',"url(img/drumset3-click.png)"); 
          drumaudio3.load();
          drumaudio3.play();
+
+        total = total + 1;
+        $(".total").html("Total Score = " + total);
+        score = score + 1;
+        $(".score").html("Score = " + score);
+
      }
 
      if (e.keyCode  == 76) {  // l
-         $("#drum4").css('background-image',"url(img/drum1hit.png)"); 
+         $("#drum4").css('background-image',"url(img/drumset4-click.png)"); 
         drumaudio4.load();
          drumaudio4.play();
+
+        total = total + 1;
+        $(".total").html("Total Score = " + total);
+        score = score + 1;
+        $(".score").html("Score = " + score);
+
      }
 
 
@@ -62,19 +93,19 @@ $('body').on('keydown', function (e) {
 $('body').on('keyup', function (e) {
 
     if (e.keyCode == 65) {  // a
-         $('#drum1').css('background-image',"url(img/drum1.png)"); 
+         $('#drum1').css('background-image',"url(img/drumset1.png)"); 
     }
 
     if (e.keyCode  == 83) {  // s
-         $("#drum2").css('background-image',"url(img/drum2.png)"); 
+         $("#drum2").css('background-image',"url(img/drumset2.png)"); 
      }
 
      if (e.keyCode  == 75) {  // k
-         $("#drum3").css('background-image',"url(img/drum2.png)"); 
+         $("#drum3").css('background-image',"url(img/drumset2.png)"); 
      }
 
      if (e.keyCode  == 76) {  // l
-         $("#drum4").css('background-image',"url(img/drum1.png)"); 
+         $("#drum4").css('background-image',"url(img/drumset1.png)"); 
      }
 
 
@@ -88,8 +119,11 @@ var drum4 = document.getElementById('drumaudio4');
 
 //bg audio
 var bgaudio = document.getElementById('bg');
+var homebg = document.getElementById('homebg');
 
-
+//score total
+var score = 0;
+var total = 0;
 
 
 

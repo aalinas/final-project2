@@ -61,7 +61,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    overflow: hidden;
 }
 
 img {
@@ -72,23 +71,87 @@ img {
   margin-right: auto;
 }
 
-a button {
-    margin-top: 20px;
-    background-color: white;
-    font-size: 20px;
-    border: 3px solid #900;
-    text-decoration: none;
+ a.start {
+ 	font-size: 100px;
+ 	width: 50%;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	display: block;
+    margin: 0 auto;
+}
+
+ a.restart {
+ 	font-size: 20px;
+ 	color: white;
+ 	text-decoration: none;
+ 	text-align: center;
+ 	position: relative;
+ 	display: block;
+
+}
+
+.score {
+	 	font-size: 20px;
+ 	color: white;
+ 	text-align: center;
+ 	position: relative;
+ 	display: block;
+}
+
+.finalScore {
+	 	font-size: 20px;
+ 	color: white;
+ 	text-align: center;
+ 	position: relative;
+ 	display: block;
 }
 
 
+.homescreen{
+	background: url(../img/bg4.gif);
+	background-size: contain;
+	background-size: cover;
+	width: 800px;
+	height: 620px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+}
+
+p{
+	color:white;
+	font-size: 20px;
+}
+
+.gamescreen-board {
+	top:1200px;
+	width:823px;
+	height: 131px;
+	position: absolute;
+	z-index: 6;
+}
+
 #gamescreen {
-    background: url(../img/gamescreen-bg.png);
-    width:501px;
+    background: url(../img/bg3.png);
+    width:800px;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+	right: 0;
+	left: 0; 
+	top:0;
+	bottom:0;
+}
+
+/*#gamescreen {
+    background: url(../img/bg3.png);
+    width:800px;
     height: 100%;
     margin: 0 auto;
     position: absolute;
     top: 0; left: 0; bottom: 0; right: 0;
-}
+}*/
 
 /*notes*/ 
 .box {
@@ -97,7 +160,7 @@ a button {
     background: url(../img/note.png);
     width:52px;
     height:52px;
-    z-index: 1;
+    z-index: 5;
 }
 
 #box1 {
@@ -124,7 +187,7 @@ a button {
 /*notes*/ 
 /*drums*/ 
 #drumset {
-    width:500px;
+    width:800px;
     position: absolute;
     margin-right: auto;
     margin-left: auto;
@@ -133,39 +196,41 @@ a button {
 
 #drum1 {
     position: absolute;
-    top:520px;
+    top:870px;
     left:10px;
-    background: url(../img/drum1.png);
-    width:135px;
-    height: 137px;
+    background: url(../img/drumset1.png);
+    width:281px;
+    height: 231px;
+    z-index: 4;
 
 }
 
 #drum2 {
     position: absolute;
-    top:590px;
-    left:150px;
-    background: url(../img/drum2.png);
-    width:93px;
-    height: 109px;
+    top:870px;
+    left:220px;
+    background: url(../img/drumset2.png);
+    width:198px;
+    height: 128px;
 }
 
 #drum3 {
     position: absolute;
-    top:590px;
-    left:250px;
-    background: url(../img/drum2.png);
-    width:93px;
-    height: 109px; 
+    top:870px;
+    left:370px;
+    background: url(../img/drumset3.png);
+    width:207px;
+    height: 147px; 
 }
 
 #drum4 {
     position: absolute;
-    top:520px;
-    left:360px;
-    background: url(../img/drum1.png);
-    width:135px;
-    height: 137px;
+    top:870px;
+    left:520px;
+    background: url(../img/drumset4.png);
+    width:273px;
+    height: 224px;
+    z-index: 4;
     
 }
 /*drums*/
