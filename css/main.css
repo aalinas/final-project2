@@ -81,7 +81,7 @@ img {
 }
 
  a.restart {
- 	font-size: 20px;
+ 	font-size: 40px;
  	color: white;
  	text-decoration: none;
  	text-align: center;
@@ -91,7 +91,7 @@ img {
 }
 
 .score {
-	 	font-size: 20px;
+	 	font-size: 30px;
  	color: white;
  	text-align: center;
  	position: relative;
@@ -99,7 +99,7 @@ img {
 }
 
 .finalScore {
-	 	font-size: 20px;
+	 	font-size: 30px;
  	color: white;
  	text-align: center;
  	position: relative;
@@ -165,22 +165,22 @@ p{
 
 #box1 {
     top:160px;
-    left:40px;
+    left:120px;
 }
 
 #box2 {
     top:0px;
-    left:170px;
+    left:300px;
 }
 
 #box3 {
     top:230px;
-    left:260px;
+    left:450px;
 }
 
 #box4 {
     top:100px;
-    left:400px;
+    left:600px;
 }
 
 
@@ -219,8 +219,8 @@ p{
     top:870px;
     left:370px;
     background: url(../img/drumset3.png);
-    width:207px;
-    height: 147px; 
+    width:222px;
+    height: 169px; 
 }
 
 #drum4 {
